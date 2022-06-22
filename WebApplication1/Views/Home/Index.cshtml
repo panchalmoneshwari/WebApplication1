@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Home</h2>
+<h3>
+    @ViewData["message"]
+</h3>
+<div>
+    <ol>
+        
+    @foreach (var item in ViewBag.courses)
+    {
+        <li>
+            @item
+        </li>
+    }
+    </ol>
+</div>

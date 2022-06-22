@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "GetAllProduct";
+}
+
+<h2>GetAllProduct</h2>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (WebApplication1.Models.Product product in ViewBag.ProductList)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Company</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
